@@ -186,6 +186,9 @@ class TranscribeTagLib {
 
     private String getWidgetHtml(Task taskInstance, TemplateField field, recordValues, recordIdx, attrs, String auxClass) {
 
+
+
+
         if (!field) {
             return ""
         }
@@ -260,6 +263,17 @@ class TranscribeTagLib {
                     tabindex: tabindex
                 )
                 break
+            case FieldType.inputTextarea:
+                int rows = 2
+                w = g.textArea(
+                    name: widgetName,
+                    rows: rows,
+                    value: existingValue,
+                    'class':"$cssClass form-control",
+                    validationRule: validationRule?.name,
+                    tabindex: tabindex,
+                )
+                break
             case FieldType.hidden:
                 w = g.hiddenField(
                     name: widgetName,
@@ -326,8 +340,9 @@ class TranscribeTagLib {
                     value: existingValue,
                     'class':"$cssClass form-control",
                     validationRule: validationRule?.name,
-                    tabindex: tabindex
+                    tabindex: tabindex,
                 )
+
         }
 
         return w
