@@ -583,6 +583,7 @@ class AjaxController {
             def latitude = getNamedFieldValues(fields, 'decimalLatitude') ?: getNamedFieldValues(fields, 'verbatimLatitude')
             def date = getNamedFieldValues(fields, 'eventDate') ?: getNamedFieldValues(fields, 'dateIdentified') ?: getNamedFieldValues(fields, 'verbatimEventDate') ?: getNamedFieldValues(fields, 'measurementDeterminedDate')
             def recordedBy = getNamedFieldValues(fields, 'recordedBy')
+            def recordedByID = getNamedFieldValues(fields, 'recordedByID')
 
             final lowerProjectName = it.project.toString().toLowerCase().trim()
             final descriptionSuffix = lowerProjectName.endsWith('expedition') || lowerProjectName.endsWith('project') ? '' : ' expedition'
@@ -607,7 +608,7 @@ class AjaxController {
             if (longitude) it.transcriptionContent.long = longitude
             if (latitude) it.transcriptionContent.lat = latitude
             if (date) it.transcriptionContent.date = date
-            if (recordedBy) it.transcriptionContent.collector = recordedBy
+            if (recordedByID) it.transcriptionContent.collector = recordedByID
         }
 
         sw.stop()
