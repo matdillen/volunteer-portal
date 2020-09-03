@@ -479,7 +479,7 @@ h6 {
 <h3 class="c10" id="h.di2br64p7q9h"><span class="c1">R&eacute;sum&eacute;</span></h3>
 
 <p class="c2"><span>DoeDat est une plateforme de science citoyenne (d&eacute;sormais d&eacute;nomm&eacute;e &laquo;DoeDat&raquo; ou &laquo;plateforme&raquo;) exploit&eacute;e par le Jardin botanique de Meise (d&eacute;sormais d&eacute;nomm&eacute; &laquo;nous&raquo;) et h&eacute;bergeant des projets de plusieurs institutions. Il soutient la recherche scientifique en impliquant le public dans les processus de transcription des donn&eacute;es et de marquage des images. Vous pouvez trouver plus d&#39;informations sur notre page Web, section</span><span
-        class="c14">&laquo;</span><span class="c9">&Agrave; propos de DoeDat</span><span class="c14">&raquo;</span><span
+        class="c14"> &laquo;</span><span class="c9">&Agrave; propos de DoeDat</span><span class="c14">&raquo;</span><span
         class="c3">. Ce document d&eacute;crit les donn&eacute;es personnelles que nous collectons, comment nous les utilisons et comment nous les prot&eacute;geons.</span>
 </p>
 
@@ -524,9 +524,9 @@ h6 {
         class="c3">projets pr&eacute;sents et futurs &agrave; notre seule et absolue discr&eacute;tion. Cela peut inclure des publications</span>
 </p>
 
-<p class="c2"><span>scientifiques num&eacute;riques et imprim&eacute;es,</span><span
-        class="c4">notre herbier virtuel</span><span>et le</span><span
-        class="c4">Global Biodiversity Information Facility</span><span class="c9">,</span><span
+<p class="c2"><span>scientifiques num&eacute;riques et imprim&eacute;es, </span><span
+        class="c4">notre herbier virtuel</span><span> et le</span><span
+        class="c4"> Global Biodiversity Information Facility</span><span class="c9">,</span><span
         class="c3">&nbsp;o&ugrave; les donn&eacute;es que vous avez fournies seront rendues publiques et librement accessibles.</span>
 </p>
 
@@ -553,7 +553,7 @@ h6 {
 <h3 class="c10" id="h.2pub6zzbchi8"><span>Donn&eacute;es que nous</span><span>collectons</span></h3>
 
 <p class="c2"><span
-        class="c15">Informations d&#39;identification</span><span>: En vous inscrivant &agrave;</span><span>DoeDat</span><span>, vous &ecirc;tes invit&eacute; &agrave; cr&eacute;er un nom d&#39;utilisateur et &agrave; fournir une adresse e-mail. L&#39;adresse e-mail est visible par les responsables du site (le personnel du Jardin botanique de Meise ainsi que les contributeurs du projet</span><span>DoeDat</span><span>&nbsp;d&#39;autres institutions) mais pas par les autres utilisateurs n&#39;ayant aucune affiliation &agrave; l&#39;une des institutions participantes (voir</span><span
+        class="c15">Informations d&#39;identification</span><span>: En vous inscrivant &agrave;</span><span>DoeDat</span><span>, vous &ecirc;tes invit&eacute; &agrave; cr&eacute;er un nom d&#39;utilisateur et &agrave; fournir une adresse e-mail. L&#39;adresse e-mail est visible par les responsables du site (le personnel du Jardin botanique de Meise ainsi que les contributeurs du projet</span><span>DoeDat</span><span>&nbsp;d&#39;autres institutions) mais pas par les autres utilisateurs n&#39;ayant aucune affiliation &agrave; l&#39;une des institutions participantes (voir </span><span
         class="c9">l</span><span class="c4">a liste</span><span class="c9">&nbsp;</span><span
         class="c3">ici). Tous les utilisateurs, gestionnaires ou non, pourront voir votre nom d&#39;utilisateur dans diff&eacute;rents contextes. Notamment, il est associ&eacute; en permanence &agrave; toutes les contributions que vous apportez sur la plateforme, y compris tout type de t&acirc;ches consult&eacute;es (termin&eacute;es ou non) et de commentaires soumis aux forums de discussion. Vous pouvez &eacute;ventuellement fournir votre vrai nom que nous pouvons d&eacute;cider d&#39;inclure lorsque nous remercions publiquement les participants, par exemple dans des pr&eacute;sentations, des publications.</span>
 </p>
@@ -653,7 +653,7 @@ h6 {
 
 <p class="c0"><span class="c3"></span></p>
 
-<p class="c2"><span>Vous gardez toujours l&#39;acc&egrave;s &agrave; vos donn&eacute;es personnelles et vous pouvez les mettre &agrave; jour &agrave; tout moment. Si vous tombez sur des inexactitudes li&eacute;es &agrave; vos donn&eacute;es personnelles que vous ne pouvez pas corriger vous-m&ecirc;me, contactez-nous &agrave;</span><span
+<p class="c2"><span>Vous gardez toujours l&#39;acc&egrave;s &agrave; vos donn&eacute;es personnelles et vous pouvez les mettre &agrave; jour &agrave; tout moment. Si vous tombez sur des inexactitudes li&eacute;es &agrave; vos donn&eacute;es personnelles que vous ne pouvez pas corriger vous-m&ecirc;me, contactez-nous &agrave; </span><span
         class="c4"><a class="c5" href="mailto:doedat@plantentuinmeise.be">doedat</a></span><span class="c4"><a
         class="c5" href="mailto:doedat@plantentuinmeise.be">@plantentuinmeise.be</a></span><span class="c3">.</span></p>
 
@@ -704,10 +704,10 @@ h6 {
     </li><li class="c2 c7"><span class="c3">Vous inviter &agrave; des &eacute;v&eacute;nements sp&eacute;ciaux.</span>
     </li></ul>
 
-<p class="c2"><span>Si vous souhaitez vous d&eacute;sinscrire de la liste de diffusion, veuillez envoyer un email &agrave;</span><span
+<p class="c2"><span>Si vous souhaitez vous d&eacute;sinscrire de la liste de diffusion, veuillez envoyer un email &agrave; </span><span
         class="c4"><a class="c5" href="mailto:doedat@plantentuinmeise.be">doedat@plantentuinmeise.be</a></span></p>
 
 <h3 class="c10" id="h.j27bjpry8nv"><span class="c1">Informations compl&eacute;mentaires et demandes</span></h3>
 
-<p class="c2"><span>Toute question concernant cette Politique de Confidentialit&eacute; ou tout probl&egrave;me de confidentialit&eacute; li&eacute; &agrave; la plate-forme doit &ecirc;tre adress&eacute;e &agrave;</span><span
+<p class="c2"><span>Toute question concernant cette Politique de Confidentialit&eacute; ou tout probl&egrave;me de confidentialit&eacute; li&eacute; &agrave; la plate-forme doit &ecirc;tre adress&eacute;e &agrave; </span><span
         class="c4">dpo@plantentuinmeise.be</span><span class="c3">.</span></p></body>

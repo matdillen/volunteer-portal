@@ -503,7 +503,7 @@ h6 {
 
 <p class="c2 c3"><span class="c0"></span></p>
 
-<p class="c2"><span>Identificatiegegevens: door te registreren bij DoeDat word je gevraagd om een &#8203;&#8203;gebruikersnaam aan te maken en een e-mailadres op te geven. Het e-mailadres is zichtbaar voor sitebeheerders (zowel Plantentuin Meise-medewerkers als DoeDat-projectbijdragers van andere instellingen) maar niet voor andere gebruikers zonder aansluiting bij een van de deelnemende instellingen (zie</span><span
+<p class="c2"><span>Identificatiegegevens: door te registreren bij DoeDat word je gevraagd om een &#8203;&#8203;gebruikersnaam aan te maken en een e-mailadres op te geven. Het e-mailadres is zichtbaar voor sitebeheerders (zowel Plantentuin Meise-medewerkers als DoeDat-projectbijdragers van andere instellingen) maar niet voor andere gebruikers zonder aansluiting bij een van de deelnemende instellingen (zie </span><span
         class="c7"><a class="c8"
                       href="https://www.google.com/url?q=https://www.doedat.be/institution/list&amp;sa=D&amp;ust=1599044620638000&amp;usg=AOvVaw2nQltnv6Ztr8odJ7hqCYGF">lijst</a>
 </span><span
@@ -528,7 +528,7 @@ h6 {
         class="c1">Je bent zelf verantwoordelijk voor de veiligheid van jouw wachtwoord(en). Je bent dus verantwoordelijk voor alles wat met jouw account wordt gedaan of ingediend.</span>
 </p>
 
-<p class="c2"><span>Als je ongeoorloofd gebruik van jouw account vaststelt, moet je ons onmiddellijk op de hoogte stellen via</span><span
+<p class="c2"><span>Als je ongeoorloofd gebruik van jouw account vaststelt, moet je ons onmiddellijk op de hoogte stellen via </span><span
         class="c7"><a class="c8" href="mailto:doedat@plantentuinmeise.be">doedat@plantentuinmeise.be</a></span><span
         class="c1">.</span></p>
 

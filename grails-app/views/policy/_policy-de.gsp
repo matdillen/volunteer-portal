@@ -709,7 +709,7 @@
 <p class="c4"><span
         class="c3">Identifizierungsinformation</span><span>: Bei der Anmeldung bei DoeDat m&uuml;ssen Sie einen Benutzernamen und eine E-Mail-Adresse angeben. Die E-Mail-Adresse ist f&uuml;r Verwalter der Seite sichtbar (Mitarbeiter des Botanischen Gartens Meise sowie Leiter von DoeDat-Projekten anderer Einrichtungen) aber nicht f&uuml;r andere keiner der teilnehmenden Einrichtungen angegliederte Benutzer (siehe</span><span><a
         class="c9"
-        href="https://www.google.com/url?q=https://www.doedat.be/institution/list&amp;sa=D&amp;ust=1599036010042000&amp;usg=AOvVaw2TXtspjC7WP1mvdUfQwuaN">&nbsp;</a>
+        href="https://www.google.com/url?q=https://www.doedat.be/institution/list&amp;sa=D&amp;ust=1599036010042000&amp;usg=AOvVaw2TXtspjC7WP1mvdUfQwuaN">&nbsp</a>
 </span><span class="c7"><a class="c9"
                            href="https://www.google.com/url?q=https://www.doedat.be/institution/list&amp;sa=D&amp;ust=1599036010043000&amp;usg=AOvVaw0rFMZKblUAxiIRkFKkJL4q">hier</a>
 </span><span
