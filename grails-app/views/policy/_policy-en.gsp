@@ -779,7 +779,7 @@ h6 {
 
 <p class="c5"><span>DoeDat is a citizen science platform (henceforth referred to as &ldquo;DoeDat&rdquo; or &ldquo;platform&rdquo;) operated by Meise Botanic Garden (henceforth referred to &ldquo;we&rdquo;) and hosting projects from several institutions. It supports scientific research by involving members of the public in the processes of transcribing data and tagging images. You can find more information on our webpage, section &ldquo;</span><span
         class="c21"><a class="c9"
-                       href="https://www.google.com/url?q=https://www.doedat.be/about/index?lang%3Den_US&amp;sa=D&amp;ust=1599044946732000&amp;usg=AOvVaw1kUZ_-pARNcNxX6vN5lyx0">About DoeDat</a>
+                       href="https://www.doedat.be/about/index?lang=en_US">About DoeDat</a>
 </span><span
         class="c6">&rdquo;.This document describes which personal data we collect, how we use it, and how we protect it.</span>
 </p>
@@ -800,9 +800,9 @@ h6 {
 
 <p class="c5"><span>The major goal of this platform is for the analyzed data to be available to researchers, for use, modification, and redistribution in order to further scientific research. Therefore, by contributing to DoeDat, you grant us and our collaborators full permission to use your contributions for present and future projects at our sole and absolute discretion. This may include digital and printed scientific publications,</span><span
         class="c21"><a class="c9"
-                       href="https://www.google.com/url?q=https://www.botanicalcollections.be/%23/en/home&amp;sa=D&amp;ust=1599044946732000&amp;usg=AOvVaw1JeFpNprszgCS5EMk6NiCz">our virtual herbarium</a>
+                       href="https://www.botanicalcollections.be/#/en/home">our virtual herbarium</a>
 </span><span>&nbsp;and the </span><span class="c21"><a class="c9"
-                                                      href="https://www.google.com/url?q=https://www.gbif.org/&amp;sa=D&amp;ust=1599044946733000&amp;usg=AOvVaw1jDpQFbZjkKzADAPic_s05">Global Biodiversity Information Facility</a>
+                                                      href="https://www.gbif.org/">Global Biodiversity Information Facility</a>
 </span><span class="c6">, where the data you contributed will be made open and freely accessible.</span></p>
 
 <h2 class="c15 c24" id="h.e4s4wdy7qu8g"><span class="c10 c17">Privacy Policy</span></h2>
@@ -820,7 +820,7 @@ h6 {
 <p class="c5"><span
         class="c7">Identifying information</span><span>: By registering with DoeDat, you are asked to create a username and supply an e-mail address. The e-mail address is visible to site managers (Meise Botanic Garden staff as well DoeDat project contributors from other institutions) but not to other users with no affiliation to one of the participating institutions (see </span><span
         class="c21"><a class="c9"
-                       href="https://www.google.com/url?q=https://www.doedat.be/institution/list&amp;sa=D&amp;ust=1599044946734000&amp;usg=AOvVaw33NK0kqVjSw9VtQGc_FVQa">list</a>
+                       href="https://www.doedat.be/institution/list">list</a>
 </span><span
         class="c6">&nbsp;here). All users, managers or not, will be able to see your username in various contexts. Notably, it is permanently associated with any contributions you make on the platform, including any kind of consulted (finished or unfinished) tasks and comments submitted to the discussion forums. You may optionally provide your real name which we may decide to include when publicly thanking participants, e.g., in presentations, publications.</span>
 </p>

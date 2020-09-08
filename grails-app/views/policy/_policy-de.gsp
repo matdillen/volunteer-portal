@@ -662,7 +662,7 @@
 
 <p class="c4"><span>DoeDat ist eine vom Botanischen Garten Meise (fortan &bdquo;wir&ldquo; genannt) betriebene B&uuml;rgerwissenschaftsplattform (fortan &bdquo;DoeDat&ldquo; bzw. &bdquo;Plattform&ldquo; genannt), die Projekte verschiedener Einrichtungen bereitstellt. Es unterst&uuml;tzt die wissenschaftliche Forschung, indem die &Ouml;ffentlichkeit in die Verfahren von Angabentranskription und Bildmarkierung hineinzieht. Weitere Ausk&uuml;nfte finden Sie auf unserer Webseite, Abschnitt &bdquo;</span><span
         class="c7"><a class="c9"
-                      href="https://www.google.com/url?q=https://www.doedat.be/about/index?lang%3Dde_DE&amp;sa=D&amp;ust=1599036010039000&amp;usg=AOvVaw0cRTA-OtllIiNHxAsm8LK7">&Uuml;ber DoeDat</a>
+                      href="https://www.doedat.be/about/index?lang=de_DE">&Uuml;ber DoeDat</a>
 </span><span
         class="c2">&ldquo;. Das vorliegende Dokument beschreibt, welche Daten wir sammeln, wie wir sie gebrauchen, und wie wir sie sch&uuml;tzen.</span>
 </p>
@@ -683,11 +683,11 @@
 
 <p class="c4"><span>Das Hauptziel dieser Plattform ist es, die analysierten Daten Forschern verf&uuml;gbar zu machen, die diese zwecks der wissenschaftlichen Forschung nutzen, bearbeiten, und weiterleiten. Deshalb gew&auml;hren Sie uns und unseren Partnern, indem Sie zu DoeDat beitragen, unbegrenzte Erlaubnis, um Ihre Beitr&auml;ge bei heutigen und k&uuml;nftigen Projekten nach unserem alleinigen und uneingeschr&auml;nkten Ermessen zu gebrauchen. Dieses kann online und gedr&uuml;ckte wissenschaftliche Publikationen,</span><span><a
         class="c9"
-        href="https://www.google.com/url?q=http://www.botanicalcollections.be/%23/de/home&amp;sa=D&amp;ust=1599036010040000&amp;usg=AOvVaw0xoTJqKLtufX4rYoww8Z9U">&nbsp;</a>
+        href="https://www.botanicalcollections.be/#/de/home">&nbsp;</a>
 </span><span class="c7"><a class="c9"
-                           href="https://www.google.com/url?q=http://www.botanicalcollections.be/%23/de/home&amp;sa=D&amp;ust=1599036010040000&amp;usg=AOvVaw0xoTJqKLtufX4rYoww8Z9U">unser virtuelles Herbarium</a>
+                           href="http://www.botanicalcollections.be/#/de/home">unser virtuelles Herbarium</a>
 </span><span>, und die &bdquo;</span><span class="c7"><a class="c9"
-                                                         href="https://www.google.com/url?q=https://www.gbif.org/&amp;sa=D&amp;ust=1599036010041000&amp;usg=AOvVaw2eSbTVEyhYC2B4y-4s1mfH">Global Biodiversity Information Facility</a>
+                                                         href="https://www.gbif.org/">Global Biodiversity Information Facility</a>
 </span><span
         class="c2">&ldquo; einschlie&szlig;en, in denen die von Ihnen beigebrachten Daten frei &ouml;ffentlich zug&auml;nglich gemacht werden.</span>
 </p>
@@ -709,9 +709,9 @@
 <p class="c4"><span
         class="c3">Identifizierungsinformation</span><span>: Bei der Anmeldung bei DoeDat m&uuml;ssen Sie einen Benutzernamen und eine E-Mail-Adresse angeben. Die E-Mail-Adresse ist f&uuml;r Verwalter der Seite sichtbar (Mitarbeiter des Botanischen Gartens Meise sowie Leiter von DoeDat-Projekten anderer Einrichtungen) aber nicht f&uuml;r andere keiner der teilnehmenden Einrichtungen angegliederte Benutzer (siehe</span><span><a
         class="c9"
-        href="https://www.google.com/url?q=https://www.doedat.be/institution/list&amp;sa=D&amp;ust=1599036010042000&amp;usg=AOvVaw2TXtspjC7WP1mvdUfQwuaN">&nbsp</a>
+        href="https://www.doedat.be/institution/list">&nbsp</a>
 </span><span class="c7"><a class="c9"
-                           href="https://www.google.com/url?q=https://www.doedat.be/institution/list&amp;sa=D&amp;ust=1599036010043000&amp;usg=AOvVaw0rFMZKblUAxiIRkFKkJL4q">hier</a>
+                           href="https://www.doedat.be/institution/list">hier</a>
 </span><span
         class="c2">&nbsp;die Liste). Alle Benutzer, Verwalter oder nicht, werden Ihren Benutzernamen in mehreren Zusammenh&auml;ngen sehen k&ouml;nnen. N&auml;mlich wird er mit jedem Ihres Beitrages auf der Plattform, einschlie&szlig;lich alle angesehene (abgearbeitete bzw. unvollendete) Aufgaben sowie bei den Diskussionsforen eingereichte Kommentare, dauerhaft verbunden. Fakultativ d&uuml;rfen Sie Ihren echten Namen bereitstellen, den wir dann zu erw&auml;hnen entscheiden m&ouml;gen, wenn wir &ouml;ffentlich den Teilnehmern danken (z.B. in Vortr&auml;gen, Publikationen).</span>
 </p>

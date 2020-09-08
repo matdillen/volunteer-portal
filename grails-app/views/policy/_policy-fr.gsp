@@ -582,7 +582,7 @@ h6 {
 
 <p class="c0"><span class="c3"></span></p>
 
-<p class="c2"><span>Si vous avez connaissance d&#39;une utilisation non autoris&eacute;e de votre compte, vous devez nous en informer imm&eacute;diatement &agrave;</span><span
+<p class="c2"><span>Si vous avez connaissance d&#39;une utilisation non autoris&eacute;e de votre compte, vous devez nous en informer imm&eacute;diatement &agrave; </span><span
         class="c4">doedat</span><span class="c4">@plantentuinmeise.be</span><span class="c3">.</span></p>
 
 <p class="c0"><span class="c3"></span></p>

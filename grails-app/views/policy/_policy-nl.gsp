@@ -505,7 +505,7 @@ h6 {
 
 <p class="c2"><span>Identificatiegegevens: door te registreren bij DoeDat word je gevraagd om een &#8203;&#8203;gebruikersnaam aan te maken en een e-mailadres op te geven. Het e-mailadres is zichtbaar voor sitebeheerders (zowel Plantentuin Meise-medewerkers als DoeDat-projectbijdragers van andere instellingen) maar niet voor andere gebruikers zonder aansluiting bij een van de deelnemende instellingen (zie </span><span
         class="c7"><a class="c8"
-                      href="https://www.google.com/url?q=https://www.doedat.be/institution/list&amp;sa=D&amp;ust=1599044620638000&amp;usg=AOvVaw2nQltnv6Ztr8odJ7hqCYGF">lijst</a>
+                      href="https://www.doedat.be/institution/list">lijst</a>
 </span><span
         class="c1">&nbsp;hier). Alle gebruikers, manager of niet, kunnen jouw gebruikersnaam in verschillende contexten zien. Het is met name permanent gekoppeld aan alle bijdragen die je op het platform levert, inclusief alle soorten geraadpleegde (voltooide of onvoltooide) taken en opmerkingen die zijn ingediend bij de discussiefora. Je kan optioneel jouw echte naam opgeven, die we kunnen opnemen bij het publiekelijk bedanken van deelnemers, bijvoorbeeld in presentaties en publicaties.</span>
 </p>
