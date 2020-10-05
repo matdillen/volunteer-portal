@@ -71,7 +71,7 @@
                                     ${projectInstance.project.id}
                                 </td>
                                 <td style="vertical-align: middle;">
-                                    <g:link action="edit" id="${projectInstance.project.id}">${projectInstance?.project?.name?.toString()}</g:link>
+                                    <g:link action="edit" id="${projectInstance.project.id}">${projectInstance?.project?.i18nName}</g:link>
                                 </td>
 
                                 <td style="vertical-align: middle;">${fieldValue(bean: projectInstance, field: "percentTranscribed")}</td>
@@ -85,7 +85,7 @@
 
                                 <td>
                                     <g:link action="downloadImageArchive" id="${projectInstance.project.id}" class="btn btn-default btn-sm"><i class="fa fa-download"></i></g:link>
-                                    <button role="button" class="btn btn-danger btn-sm archive-project" data-project-name="${projectInstance.project.name}" data-href="${createLink(action:"archive", id:projectInstance.project.id)}"><i class="fa fa-trash"></i></button>
+                                    <button role="button" class="btn btn-danger btn-sm archive-project" data-project-name="${projectInstance.project.i18nName}" data-href="${createLink(action:"archive", id:projectInstance.project.id)}"><i class="fa fa-trash"></i></button>
                                 </td>
                             </tr>
                         </g:each>
@@ -107,7 +107,7 @@ jQuery(function($) {
     var href = $this.data('href');
     var name = $this.data('projectName');
 
-    bootbox.confirm(${message(code: "project.archive.line1")}+"\"" + name + "\"?  ${message(code: "project.archive.line2")}", function(result) {
+    bootbox.confirm("${message(code: "project.archive.line1")} \"" + name + "\"?  ${message(code: "project.archive.line2")}", function(result) {
       if (result) {
         $.post(href).then(function() {
         window.location.reload();
