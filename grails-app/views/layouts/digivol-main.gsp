@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="org.springframework.context.i18n.LocaleContextHolder" %>
+<%@ page import="org.grails.plugins.localization.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -224,6 +225,7 @@
                         <li><g:link controller="about" fragment="what-does-digivol-mean"><g:message code="main.about_digivol.why" /></g:link></li>
                         <li><g:link controller="about" fragment="about-digivol"><g:message code="main.about_digivol.submit" /></g:link></li>
                         <li><g:link controller="about" fragment="why"><g:message code="main.about_digivol.references" /></g:link></li>
+                        <li><g:link controller="policy"><g:message code="main.about_digivol.policy" /></g:link></li>
                     </ul>
                 </div>
 
