@@ -224,7 +224,7 @@ publishing {
                     it.replaceNode {}
                 }
             }
-            from components.web
+//            from components.web
         }
     }
 }
