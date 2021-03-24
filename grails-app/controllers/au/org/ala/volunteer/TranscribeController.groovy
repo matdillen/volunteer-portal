@@ -209,6 +209,29 @@ class TranscribeController {
         }
     }
 
+    def showTaskWithId() {
+        def project = Project.get(params.projectId)
+        def task = Task.get(params.taskId)
+
+        if (project == null) {
+            log.error("Project not found for id: " + params.projectId)
+            redirect(view: '/index')
+        }
+
+        if (task == null) {
+            log.error("Task not found for id: " + params.taskId)
+            redirect(view: '/index')
+        }
+
+        log.debug("project id = " + params.id + " || msg = " + params.msg + " || prevInt = " + params.prevId)
+
+        if (params.msg) {
+            flash.message = params.msg
+        }
+
+        redirect(action: 'task', id: task.id, params: [complete: params.complete])
+    }
+
     def geolocationToolFragment() {
     }
 

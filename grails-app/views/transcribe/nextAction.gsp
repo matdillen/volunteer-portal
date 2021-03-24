@@ -22,7 +22,12 @@
 
                 $("li#viewTask button").click(function (e) {
                     e.preventDefault();
-                    window.location.href = "${createLink(controller: 'transcribe', action: 'showNextFromProject', id: taskInstance?.project?.id, params: [prevId: taskInstance?.id])}";
+                    var hasOverview = Boolean("${taskInstance?.project?.hasOverviewPage}");
+                    if (hasOverview) {
+                        window.location.href = "${createLink(controller: 'overview', action: 'showProjectOverview', id: taskInstance?.project?.id, params: [userId: userId])}";
+                    } else {
+                        window.location.href = "${createLink(controller: 'transcribe', action: 'showNextFromProject', id: taskInstance?.project?.id, params: [prevId: taskInstance?.id])}";
+                    }
                 });
 
                 $("li#viewStats button").click(function (e) {
