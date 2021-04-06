@@ -2,7 +2,7 @@
 <%@ page import="au.org.ala.volunteer.TemplateField" %>
 
 <g:set var="templateFields"
-       value="${TemplateField.findAllByTemplate(taskInstance?.project?.template)?.collectEntries {
+       value="${TemplateField.findAllByTemplate(task?.project?.template)?.collectEntries {
            [it.fieldType.toString(), it]
        }}"/>
 

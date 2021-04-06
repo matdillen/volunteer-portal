@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row" style="padding-bottom: 10px;">
             <div class="col-sm-12">
-                <g:set var="activeFilter" value="${params.activeFilter ?: TaskFilter.showAll}"/>
+                <g:set var="activeFilter" value="${params.activeFilter ?: TaskFilter.showReadyForTranscription}"/>
                 <g:set var="urlParams"
                        value="${[sort: params.sort ?: "", order: params.order ?: "", offset: 0, q: params.q ?: "", mode: params.mode ?: "", activeFilter: activeFilter]}"/>
 
@@ -42,7 +42,7 @@
                 <div class="row">
                     <g:each in="${tasks}" status="i" var="task">
                         <g:render template="taskCard"
-                                  model="[task: task, project: project, auditService: auditService, userId: userId]"/>
+                                  model="[task: task, project: project, userId: userId]"/>
                         <g:if test="${(i + 1) % 2 == 0}">
                             <div class="clearfix visible-md-block visible-lg-block"></div>
                         </g:if>

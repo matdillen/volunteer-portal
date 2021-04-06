@@ -3,7 +3,6 @@ package au.org.ala.volunteer
 class OverviewController {
 
     def userService
-    def auditService
 
     def index() {
         if (params.id) {
@@ -46,16 +45,10 @@ class OverviewController {
 
         switch (filter) {
             case TaskFilter.showReadyForTranscription.toString():
-                filteredTasks = tasks.findAll {
-                    def timeoutWindow = System.currentTimeMillis() - ((grailsApplication.config.viewedTask.timeout as long) ?: 7200000)
-                    it.fullyTranscribedBy == null && (it.lastViewed == null || it.lastViewed < timeoutWindow)
-                }
+                filteredTasks = tasks.findAll { it.isAvailableForTranscription(userId) }
                 break
             case TaskFilter.showTranscriptionLocked.toString():
-                filteredTasks = tasks.findAll {
-                    def timeoutWindow = System.currentTimeMillis() - ((grailsApplication.config.viewedTask.timeout as long) ?: 7200000)
-                    !(it.fullyTranscribedBy == null && (it.lastViewed == null || it.lastViewed < timeoutWindow))
-                }
+                filteredTasks = tasks.findAll { !it.isAvailableForTranscription(userId) }
                 break
             default:
                 filteredTasks = tasks
@@ -75,7 +68,6 @@ class OverviewController {
 
         render(view: 'overview', model: [
                 project     : project,
-                auditService: auditService,
                 userId      : userId,
                 tasks       : paginatedTasks,
                 tasksAmount : filteredTasks.size()
@@ -83,10 +75,14 @@ class OverviewController {
     }
 
     def preview() {
-        def taskInstance = Task.get(params.taskId)
+        def userId = userService.currentUserId
+
+        def task = Task.get(params.taskId)
 
         render(template: "preview", model: [
-                taskInstance: taskInstance
+                task: task,
+                project: task?.project?.id,
+                userId: userId
         ])
     }
 

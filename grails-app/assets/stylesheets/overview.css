@@ -26,3 +26,15 @@
     width: fit-content;
     margin: auto;
 }
+
+.taskCardStatus {
+    float: right;
+    text-transform: lowercase;
+    background-color: #d5502a;
+    color: #ffffff;
+    padding: 4px 8px;
+}
+
+.taskCardStatus:first-letter {
+    text-transform: uppercase;
+}
