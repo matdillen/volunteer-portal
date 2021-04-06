@@ -30,21 +30,58 @@ class OverviewController {
             flash.message = params.msg
         }
 
-        params.max = Math.min(params.max ? params.int('max') : 20, 200)
-        params.order = params.order ?: 'asc'
-        params.sort = params.sort ?: 'id'
-        params.offset = params.offset ?: 0
+        def filter = params.activeFilter
+        params.activeFilter = filter ?: TaskFilter.showAll
+        def max = Math.min(params.max ? params.int('max') : 10, 20)
+        params.max = max
+        def order = params.order ?: 'asc'
+        params.order = order
+        def sort = params.sort ?: 'id'
+        params.sort = sort
+        def offset = (params.offset ?: 0) as int
+        params.offset = offset
 
-        def tasksAmount = project?.tasks?.size()
-        def tasks = Task.findAllByProject(project, params)
+        def tasks = Task.findAllByProject(project)
+        def filteredTasks
+
+        switch (filter) {
+            case TaskFilter.showReadyForTranscription.toString():
+                filteredTasks = tasks.findAll {
+                    def timeoutWindow = System.currentTimeMillis() - ((grailsApplication.config.viewedTask.timeout as long) ?: 7200000)
+                    it.fullyTranscribedBy == null && (it.lastViewed == null || it.lastViewed < timeoutWindow)
+                }
+                break
+            case TaskFilter.showTranscriptionLocked.toString():
+                filteredTasks = tasks.findAll {
+                    def timeoutWindow = System.currentTimeMillis() - ((grailsApplication.config.viewedTask.timeout as long) ?: 7200000)
+                    !(it.fullyTranscribedBy == null && (it.lastViewed == null || it.lastViewed < timeoutWindow))
+                }
+                break
+            default:
+                filteredTasks = tasks
+                break
+        }
+
+        def fromIndex = Math.min(offset, filteredTasks.size())
+        def toIndex = Math.min(offset + max, filteredTasks.size())
+
+        def paginatedTasks
+
+        if(filteredTasks.size() > 0) {
+            paginatedTasks = filteredTasks.subList(fromIndex, toIndex)
+        } else {
+            paginatedTasks = filteredTasks
+        }
 
         render(view: 'overview', model: [
                 project     : project,
                 auditService: auditService,
                 userId      : userId,
-                tasks       : tasks,
-                tasksAmount : tasksAmount
+                tasks       : paginatedTasks,
+                tasksAmount : filteredTasks.size()
         ])
     }
+
+    def showPreview() {}
 
 }

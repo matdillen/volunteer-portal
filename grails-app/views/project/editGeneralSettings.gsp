@@ -142,7 +142,7 @@
         <div class="col-md-9 col-md-offset-3">
             <label for="hasOverviewPage" class="checkbox">
                 <g:checkBox name="hasOverviewPage"
-                            checked="${projectInstance.hasOverviewPage}"/>&nbsp;<g:message code="project.general_settings.has_overview_page"/>
+                            checked="${projectInstance.hasOverviewPage}"/>&nbsp;<g:message code="project.general_settings.hasOverviewPage"/>
             </label>
         </div>
     </div>
