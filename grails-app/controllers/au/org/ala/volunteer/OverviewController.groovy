@@ -82,6 +82,12 @@ class OverviewController {
         ])
     }
 
-    def showPreview() {}
+    def preview() {
+        def taskInstance = Task.get(params.taskId)
+
+        render(template: "preview", model: [
+                taskInstance: taskInstance
+        ])
+    }
 
 }

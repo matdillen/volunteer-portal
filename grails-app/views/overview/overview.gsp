@@ -8,36 +8,9 @@
     <g:set var="entityName" value="${message(code: 'project.label', default: 'Project')}"/>
     <title><cl:pageTitle title="${g.message(code: "default.list.label", args: ['Expedition'])}"/></title>
     <asset:stylesheet src="digivol-image-resize"/>
-    <style>
-    .zoom {
-        position: relative;
-        cursor: zoom-in;
-        display: block;
-        min-height: 250px;
-        background-size: 400%;
-    }
-
-    .zoom:hover img {
-        opacity: 0;
-    }
-
-    .zoom img {
-        max-width: 100%;
-        max-height: 100%;
-        position: absolute;
-        object-fit: fill;
-        pointer-events: none;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: opacity 0.5s;
-    }
-
-    .actions {
-        width: fit-content;
-        margin: auto;
-    }
-    </style>
+    <asset:stylesheet src="image-viewer"/>
+    <asset:stylesheet src="overview.css"/>
+    <asset:stylesheet src="loading"/>
 </head>
 
 <body class="digivol">
@@ -70,35 +43,21 @@
                     <g:each in="${tasks}" status="i" var="task">
                         <g:render template="taskCard"
                                   model="[task: task, project: project, auditService: auditService, userId: userId]"/>
-                        <g:if test="${(i + 1) % 4 == 0}">
+                        <g:if test="${(i + 1) % 2 == 0}">
                             <div class="clearfix visible-md-block visible-lg-block"></div>
                         </g:if>
                     </g:each>
                     <div class="pagination">
                         <g:paginate total="${tasksAmount}" prev="" next=""
                                     action="showProjectOverview"
-                                    id="${params.id}"
-                                    params="${[q: params.q] + (extraParams ?: [:])}"/>
+                                    id="${params.id}"/>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<script>
-    let thumbnails = document.getElementsByClassName('zoom');
-    for (let i = 0; i < thumbnails.length; i++) {
-        thumbnails[i].addEventListener('mousemove', (e) => {
-            const zoomer = e.currentTarget;
-            let offsetX, offsetY;
-            e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
-            e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
-            x = offsetX / zoomer.offsetWidth * 100
-            y = offsetY / zoomer.offsetHeight * 100
-            zoomer.style.backgroundPosition = x + '% ' + y + '%';
-        })
-    }
-
-</script>
+<asset:javascript src="image-viewer.js" asset-defer=""/>
+<asset:javascript src="overview.js" asset-defer=""/>
 </body>
 </html>
