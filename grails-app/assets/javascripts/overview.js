@@ -5,19 +5,6 @@
 var shouldRefresh = true;
 var refreshTime = 30000;
 
-var thumbnails = $('.quickPreview');
-for (var thumbnailIndex = 0; thumbnailIndex < thumbnails.length; thumbnailIndex++) {
-    thumbnails[thumbnailIndex].addEventListener('mousemove', function (e) {
-        var zoomDiv = e.currentTarget;
-        var offsetX, offsetY, x, y;
-        e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
-        e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
-        x = offsetX / zoomDiv.offsetWidth * 100
-        y = offsetY / zoomDiv.offsetHeight * 100
-        zoomDiv.style.backgroundPosition = x + '% ' + y + '%';
-    })
-}
-
 var previewButtons = $('.btnPreview');
 for (var buttonIndex = 0; buttonIndex < previewButtons.length; buttonIndex++) {
     var button = previewButtons[buttonIndex];

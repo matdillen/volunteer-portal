@@ -43,9 +43,6 @@
                     <g:each in="${tasks}" status="i" var="task">
                         <g:render template="taskCard"
                                   model="[task: task, project: project, userId: userId]"/>
-                        <g:if test="${(i + 1) % 2 == 0}">
-                            <div class="clearfix visible-md-block visible-lg-block"></div>
-                        </g:if>
                     </g:each>
                     <div class="pagination">
                         <g:paginate total="${tasksAmount}" prev="" next=""
