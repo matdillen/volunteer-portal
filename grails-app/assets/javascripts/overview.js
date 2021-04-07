@@ -43,10 +43,12 @@ for (var buttonIndex = 0; buttonIndex < previewButtons.length; buttonIndex++) {
                 shouldRefresh = true;
             },
             onShown: function () {
-                var btn = $('.btnPreview')
+                var btn = $('.btnPreview');
                 btn.removeClass('loading');
-                setupPanZoom($('#previewBlock img')[0]);
                 btn.removeAttr('disabled');
+            },
+            onContentLoaded: function () {
+                setupPanZoom($('#previewBlock img')[0]);
             }
         });
 
