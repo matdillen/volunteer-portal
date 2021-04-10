@@ -42,7 +42,7 @@
                 <div class="row">
                     <g:each in="${tasks}" status="i" var="task">
                         <g:render template="taskCard"
-                                  model="[task: task, project: project, userId: userId]"/>
+                                  model="[task: task, project: project, userId: userId, isAdmin: isAdmin]"/>
                     </g:each>
                     <div class="pagination">
                         <g:paginate total="${tasksAmount}" prev="" next=""

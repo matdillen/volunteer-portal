@@ -13,7 +13,7 @@
 
         <div class="caption">
             <div class="actions">
-                <g:render template="action" model="${[task: task, project: project, userId: userId]}"/>
+                <g:render template="action" model="${[task: task, project: project, userId: userId, isAdmin: isAdmin]}"/>
                 <button id="${task?.id}" class="btn btn-primary btnPreview" role="button">
                     <g:message code="overview.preview"/>
                 </button>

@@ -229,7 +229,27 @@ class TranscribeController {
             flash.message = params.msg
         }
 
-        redirect(action: 'task', id: task.id, params: [complete: params.complete])
+        def currentUserId = userService.currentUserId
+        def isNotAdmin = !userService.isAdmin()
+        boolean isLockedByOtherUser = auditService.isTaskLockedForUser(task, currentUserId)
+
+        if (isLockedByOtherUser) {
+            flash.message  = "${message(code: 'transcribe.task_is_viewed_by_another_user')}"
+            if (isNotAdmin) {
+                def availableTask = taskService.getNextTask(currentUserId, project)
+                if (!availableTask) {
+                    log.debug "1."
+                    render(view: 'noTasks', model: [complete: params.complete])
+                } else {
+                    redirect(controller: 'overview', action: 'showProjectOverview', id: project?.id)
+                }
+                return
+            } else {
+                flash.message = "${message(code: 'transcribe.this_task_is_locked_by_another_user')}"
+            }
+        }
+
+        redirect(action: 'task', id: task.id, params: [complete: params.complete, msg: flash.msg])
     }
 
     def geolocationToolFragment() {

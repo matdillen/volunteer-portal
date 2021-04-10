@@ -17,6 +17,7 @@ class OverviewController {
     def showProjectOverview() {
         def project = Project.get(params.id)
         def userId = userService.currentUserId
+        def isAdmin = userService.isAdmin()
 
         if (project == null) {
             log.error("Project not found for id: " + params.id)
@@ -69,20 +70,18 @@ class OverviewController {
         render(view: 'overview', model: [
                 project     : project,
                 userId      : userId,
+                isAdmin     : isAdmin,
                 tasks       : paginatedTasks,
                 tasksAmount : filteredTasks.size()
         ])
     }
 
     def preview() {
-        def userId = userService.currentUserId
-
         def task = Task.get(params.taskId)
 
         render(template: "preview", model: [
                 task: task,
                 project: task?.project?.id,
-                userId: userId
         ])
     }
 
