@@ -36,7 +36,7 @@ class OverviewController {
         params.max = max
         def order = params.order ?: 'asc'
         params.order = order
-        def sort = params.sort ?: 'id'
+        def sort = params.sort ?: 'externalIdentifier'
         params.sort = sort
         def offset = (params.offset ?: 0) as int
         params.offset = offset
@@ -56,6 +56,7 @@ class OverviewController {
                 break
         }
 
+        filteredTasks.sort { it.externalIdentifier }
         def fromIndex = Math.min(offset, filteredTasks.size())
         def toIndex = Math.min(offset + max, filteredTasks.size())
 
