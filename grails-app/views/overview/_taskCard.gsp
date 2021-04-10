@@ -3,12 +3,11 @@
 
 <div class="col-sm-12 col-md-6 col-lg-4">
     <div class="thumbnail">
-        <div class="quickPreview"
-             style="background-image: url('${task?.multimedia?.first()?.filePathToThumbnail}');">
+        <div class="quickPreview">
             <img src="${task?.multimedia?.first()?.filePathToThumbnail}" alt="task thumbnail"/>
             <g:set var="status" value="${task?.status(userId)}"/>
-            <g:if test="${status != TaskStatus.OPEN}">
-                <div class="taskCardStatus">${status}</div>
+            <g:if test="${status != TaskStatus.open}">
+                <div class="task-card-status">${message(code: status.i18nLabel)}</div>
             </g:if>
         </div>
 

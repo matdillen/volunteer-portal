@@ -73,24 +73,33 @@ class Task implements Serializable {
     }
 
     def status(userId) {
-        if (fullyValidatedBy != null) return TaskStatus.VALIDATED
+        if (fullyValidatedBy != null) return TaskStatus.validated
 
-        if (fullyTranscribedBy != null) return TaskStatus.TRANSCRIBED
+        if (fullyTranscribedBy != null) return TaskStatus.transcribed
 
         def timeoutWindow = System.currentTimeMillis() - ((grailsApplication.config.viewedTask.timeout as long) ?: 7200000)
         if (lastViewedBy == null
                 || lastViewedBy == userId
-                || lastViewed < timeoutWindow) return TaskStatus.OPEN
+                || lastViewed < timeoutWindow) return TaskStatus.open
 
-        else return TaskStatus.CURRENTLY_USED
+        else return TaskStatus.currentlyUsed
     }
 
     def isAvailableForTranscription(userId) {
-        return status(userId) == TaskStatus.OPEN
+        return status(userId) == TaskStatus.open
     }
 
 }
 
 enum TaskStatus {
-    VALIDATED, TRANSCRIBED, CURRENTLY_USED, OPEN
+    validated("taskStatus.validated"),
+    transcribed("taskStatus.transcribed"),
+    currentlyUsed("taskStatus.currentlyUsed"),
+    open("taskStatus.open")
+
+    def i18nLabel
+
+    TaskStatus(String i18nLabel) {
+        this.i18nLabel = i18nLabel
+    }
 }
